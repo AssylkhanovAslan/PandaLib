@@ -1,4 +1,4 @@
-package kz.assylkhanov.pandasml;
+package kz.pandamobile.pandalib;
 
 import org.junit.Test;
 

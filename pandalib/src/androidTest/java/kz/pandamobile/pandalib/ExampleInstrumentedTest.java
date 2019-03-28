@@ -1,4 +1,4 @@
-package kz.assylkhanov.pandasml;
+package kz.pandamobile.pandalib;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("kz.assylkhanov.pandasml.test", appContext.getPackageName());
+        assertEquals("kz.pandamobile.pandalib.test", appContext.getPackageName());
     }
 }

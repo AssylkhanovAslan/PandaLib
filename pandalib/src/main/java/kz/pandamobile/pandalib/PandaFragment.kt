@@ -1,8 +1,9 @@
-package kz.assylkhanov.pandasml
+package kz.pandamobile.pandalib
 
 import android.app.ProgressDialog
 import android.content.Context
 import android.widget.Toast
+import android.widget.Toast.LENGTH_SHORT
 import androidx.fragment.app.Fragment
 
 /**
@@ -72,8 +73,8 @@ abstract class PandaFragment : Fragment() {
      *
      * @param message message to be shown;
      */
-    fun showToast(message: String) {
-        Toast.makeText(activity, message, Toast.LENGTH_SHORT).show()
+    fun showToast(message: String, length: Int = LENGTH_SHORT) {
+        Toast.makeText(activity, message, length).show()
     }
 
     /**
@@ -81,8 +82,8 @@ abstract class PandaFragment : Fragment() {
      *
      * @param messageResourceId message to be shown;
      */
-    fun showToast(messageResourceId: Int) {
-        Toast.makeText(activity, getString(messageResourceId), Toast.LENGTH_SHORT).show()
+    fun showToast(messageResourceId: Int, length: Int = LENGTH_SHORT) {
+        Toast.makeText(activity, getString(messageResourceId), length).show()
     }
 
     /**
