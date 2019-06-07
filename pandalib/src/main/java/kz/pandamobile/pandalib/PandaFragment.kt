@@ -1,6 +1,7 @@
 package kz.pandamobile.pandalib
 
 import android.app.ProgressDialog
+import android.content.Context
 import android.widget.Toast
 import android.widget.Toast.LENGTH_SHORT
 import androidx.fragment.app.Fragment
@@ -13,6 +14,15 @@ abstract class PandaFragment : Fragment() {
     protected lateinit var dialog: ProgressDialog
     private var dialogCounter = 0
     private var isAttached = false
+
+
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        isAttached = true
+        dialog = ProgressDialog(context)
+        dialog.isIndeterminate = true
+
+    }
 
     override fun onDetach() {
         super.onDetach()
